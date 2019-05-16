@@ -4,147 +4,292 @@
 	<meta charset="UTF-8">
 	<title>Empatec</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, user-scalable=0"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 	<style>
-	body{
-		background-image: linear-gradient(-90deg, yellow, purple);
-		overflow: hidden;
-		font-family: 'Roboto', sans-serif;
+	.aviso{
+		display: none;
 	}
-	#corpo img:hover{
+	.bulimia{
+		width: 220px;
+		height: 210px;
+		padding: 10px;
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+	.panico{
+		width: 220px;
+		height: 250px;
+		padding: 10px;
+		margin-left: -45px;
+	}
+	.bipolaridade{
+		width: 220px;
+		height: 240px;
+		padding: 10px;
+		margin-top: 5px;
+		margin-left: -45px;
+	}
+	.toc{
+		width: 260px;
+		height: 250px;
+		padding: 10px;
+		margin-top: -60px;
+		margin-left: 10px;
+	}
+	.autismo{
+		width: 220px;
+		height: 250px;
+		padding: 10px;
+		margin-top: -60px;
+		margin-left: -65px;
+	}
+	.esquizofrenia{
+		width: 220px;
+		height: 250px;
+		padding: 10px;
+		margin-top: -60px;
+		margin-left: -45px;
+	}
+	.zoom{
 		cursor: pointer;
 	}
+	.zoom img{
+		-moz-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.zoom:hover img{
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	#logo{
+		margin-left: -80px;
+	}
+	@media only screen and (max-width: 500px) {
+		.aviso{
+			display: block;
+		}
+		#corpo{
+			display: none;
+		}
 
-	#toc{
-		padding: 10px; margin-left: 10px;
 	}
-
-	#bulimia{
-		padding: 10px; margin-left: 20px;
-	}
-	#autismo{
-		margin-top: -150px; margin-left: 20px;
-	}
-	#panico{
-		margin-top: -90px; margin-left: -30px;
-	}
-	#esquizofrenia{
-		margin-top: -145px; margin-left: 15px;
-	}
-	#bipolaridade{
-		margin-top: -80px; margin-left: 30px;
-	}
-	@media only screen and (max-width: 761px){
-		#toc{
-			width: 220px;
+	@media only screen and (max-width: 700px) {
+		body {
+			overflow-x: hidden;
+			width: 100%;
 		}
-		#bulimia{
-			width: 160px;
-			margin-left: -5px;
+		.modal p{
+			font-size: 12px;
 		}
-		#autismo{
-			width: 150px;
-			margin-top: -120px;
+		#corpo{
+			margin-left: 25px;
 		}
-		#panico{
-			width: 200px;
-			margin-top: -75px;
-			margin-left: -50px;
-		}		
-		#esquizofrenia{
-			width: 205px;
-			margin-top: -125px;
+		.pecas{
+			margin-left: 60px;
 		}
-		#bipolaridade{
-			width: 150px;
-			margin-left: 0px;
-			margin-top: -75px;
+		.bulimia{
+			width: 120px;
+			height: 110px;
+			padding: 10px;
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+		.panico{
+			width: 120px;
+			height: 130px;
+			padding: 10px;
+			margin-left: -33px;
+			margin-top: 10px;
+		}
+		.bipolaridade{
+			width: 120px;
+			height: 125px;
+			padding: 10px;
+			margin-top: 13px;
+			margin-left: -33px;
+		}
+		.toc{
+			width: 140px;
+			height: 130px;
+			padding: 10px;
+			margin-top: -40px;
+			margin-left: 20px;
+		}
+		.autismo{
+			width: 120px;
+			height: 131px;
+			padding: 10px;
+			margin-top: -40px;
+			margin-left: -43px;
+		}
+		.esquizofrenia{
+			width: 120px;
+			height: 130px;
+			padding: 10px;
+			margin-top: -40px;
+			margin-left: -33px;
+		}
+		#logo{
+			margin-left: -20px;
 		}
 	}
 </style>
-</head>
-<body >
-	<?php 
-	$toc = 'TOC é um transtorno psiquiátrico de ansiedade que tem como principal <br> característica a presença de crises recorrentes de obsessões e compulsões. ';
-	$bulimia = 'Bulimia é um distúrbio que se caracteriza por episódios recorrentes <br> e incontroláveis de consumo de grandes quantidades de alimentos.';
-	$autismo = 'O autismo é um transtorno de desenvolvimento que compromete as habilidades de comunicação <br> e interação social e geralmente aparece até os 3 anos de vida. ';
-	$panico = 'A síndrome do pânico é um tipo de transtorno de ansiedade no qual ocorrem crises inesperadas <br> de desespero e medo intenso de que algo ruim aconteça, mesmo que não haja motivo algum para isso ou sinais de perigo iminente.';
-	$esquizofrenia = 'A esquizofrenia é um transtorno psiquiátrico em que uma alteração cerebral dificulta o correto julgamento sobre a realidade,<br> a produção de pensamentos simbólicos e abstratos e a elaboração de respostas emocionais complexas.';
-	$bipolaridade = 'O Transtorno Bipolar, também chamado de Transtorno Maníaco-Depressivo ou Bipolaridade,<br> é um transtorno mental caracterizado principalmente pela brusca mudança de humor.';
 
-	?>
-	<div class="container center-align" id="corpo"><br>
-		<h3>
-			<span style="background-color: red; padding: 5px; color: white">E</span>
-			<span style="background-color: blue; padding: 5px; margin-left: -10px; color: white">M</span>
-			<span style="background-color: purple; padding: 5px; margin-left: -10px; color: white">P</span>
-			<span style="background-color: green; padding: 5px; margin-left: -10px; color: white">A</span>
-			<span style="background-color: orange; padding: 5px; margin-left: -10px; color: white">T</span>
-			<span style="background-color: grey; padding: 5px; margin-left: -10px; color: white">E</span>
-			<span style="background-color: silver; padding: 5px; margin-left: -10px; color: white">C</span>
-		</h3>
-		<div class="row">
-			<div class="col s6 l2 offset-l4 tooltipped" data-position="bottom" data-tooltip="<?php echo $toc; ?>"><img src="img/1.png" alt="toc" id="toc"></div>
-			<div class="col s6 l2 tooltipped" data-position="bottom" data-tooltip="<?php echo $bulimia; ?>"><img src="img/2.png" alt="bulimia" id="bulimia"></div>
-		</div>
-		<div class="row">
-			<div class="col s6 l2 offset-l4 tooltipped" data-position="bottom" data-tooltip="<?php echo $autismo; ?>"><img src="img/3.png" alt="autismo" id="autismo"></div>
-			<div class="col s6 l2 tooltipped" data-position="bottom" data-tooltip="<?php echo $panico; ?>"><img src="img/4.png" alt="pânico" id="panico"></div>
-		</div>
-		<div class="row">
-			<div class="col s6 l2 offset-l4 tooltipped" data-position="top" data-tooltip="<?php echo $esquizofrenia; ?>"><img src="img/5.png" alt="esquizofrenia" id="esquizofrenia"  ></div>
-			<div class="col s6 l2 tooltipped" data-position="top" data-tooltip="<?php echo $bipolaridade; ?>"><img src="img/6.png" alt="bipolaridade" id="bipolaridade" ></div>
+</head>
+<body class="text-center" >
+
+	<div class="aviso">
+		<img src="img/logo.png" alt="Empatec logo" class="img-fluid my-5" id="logo"><br><br>
+		<h1>
+			<i class="material-icons" style="font-size: 68px">
+				screen_rotation
+			</i>
+			<br>
+			Por favor, deixe seu smartphone na horizontal.
+		</h1>
+	</div>
+	<div id="corpo">
+		<div class="container">
+			<div class="col-8 mx-auto">
+				<img src="img/logo.png" alt="Empatec logo" class="img-fluid my-3" id="logo" ondragstart="return false">
+			</div>
+			<div class="col-8 mx-auto">
+				<div class="row text-center">
+					<div class="zoom">
+						<img src="img/2.png" alt="bulimia" class="img-fluid bulimia " data-id="bulimia" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Bulimia">
+					</div>
+					<div class="zoom">
+						<img src="img/4.png" alt="panico" data-id="panico" class="panico" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Pânico">
+					</div>
+					<div class="zoom">
+						<img src="img/6.png" alt="bipolaridade" data-id="bipolaridade" class="bipolaridade" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Bipolaridade">
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="zoom">
+						<img src="img/1.png" alt="toc" data-id="toc" class="toc" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="TOC">
+					</div>
+					<div class="zoom">
+						<img src="img/3.png" alt="autismo" data-id="autismo" class="autismo" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Autismo">
+					</div>
+					<div class="zoom">
+						<img src="img/5.png" alt="esquizofrenia" data-id="esquizofrenia" class="esquizofrenia" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Esquizofrênia">
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="modalDescricao" tabindex="-1" role="dialog" aria-labelledby="modalDescricaoLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<i class="material-icons" style="color: red">
+								warning
+							</i>
+							<p class="lead" style="text-align: justify;">
+								A simulação que você está prestes a experimentar é um breve episódio psicótico de um paciente com <span class="id"></span>.<br>
+								Uma crise assim pode causar irritabilidade, desconforto, sensação de mal estar. Os sintomas que você experimentará representam uma compilação de uma série de ocorrências sensoriais.<br>
+								Essas ocorrências incluem imagens, sons e sensações. <br>
+								Se você tiver algum desconforto durante a experiência, por favor, sinalize ao seu médico psiquiatra ou psicologo.
+							</p>
+							<button type="button" class="btn btn-danger" data-dismiss="modal" >Sair</button>
+							<button type="button" class="btn btn-primary btnId">Ver</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div">
+
+				<div class="footer-copyright text-center py-3">© 2019 Copyright:
+					<a href="https://www.urcamp.tche.br/cursos/graduacao/sistemas-de-informacao" target="_blank">Sistemas de Informação</a>
+				</div>
+
+			</div>
 		</div>
 	</div>
 
-	<div class="video" style="display: none; margin: 0" id="video-container">
+
+	<div class="video" style="display: none; margin: 0" id="video-container" >
 		<video id="video" style="width: 100%; height: 100vh;">
 			Seu navegador não suporta o elemento <code>video</code>.
 		</video>
 	</div>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	<script>
-		$("document").ready(function(){
-			$('.tooltipped').tooltip();
+		$('#modalDescricao').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget)
+			var titulo = button.data('nome') 
+			var id = button.data('id') 
+
+			var modal = $(this)
+			modal.find('.tituloModal').text(titulo)
+			modal.find('.id').text(id)
+			modal.find('.btnId').attr('id', id)
+			carregaVideo()			
+		})
+
+
+		function carregaVideo(e){
 			$('#video').on('ended', function (e) {
 				$('#video').css('display', 'none');
 				$('#video-container').css('display', 'none');
 				$('#corpo').css('display', 'block')
-				$("body").css('background-image', 'linear-gradient(-90deg, yellow, purple)')
+				$("body").css('background-color', 'white')
+				$('#modalDescricao').modal('hide')
 			});
 
-			$("#toc").click(function(){
+			$("#toc").on('click', function(){
 				$("body").css('background-image', 'none').css('background-color', 'black')
 				$("#video").css('display', 'block')
 				$("#video").attr('autoplay', '').attr('src', 'toc.mp4')
 				$("#video-container").css('display', 'block')
 				$("#corpo").css('display', 'none')
 			})
-			$("#bulimia").click(function(){
-				alert("bulimia")
+			$("#bulimia").on('click', function(){
+				$("body").css('background-image', 'none').css('background-color', 'black')
+				$("#video").css('display', 'block')
+				$("#video").attr('autoplay', '').attr('src', 'bulimia.mp4')
+				$("#video-container").css('display', 'block')
+				$("#corpo").css('display', 'none')
 			})
-			$("#autismo").click(function(){
+			$("#autismo").on('click', function(){
 				$("body").css('background-image', 'none').css('background-color', 'black')
 				$("#video").css('display', 'block')
 				$("#video").attr('autoplay', '').attr('src', 'autismo.mp4')
 				$("#video-container").css('display', 'block')
 				$("#corpo").css('display', 'none')
 			})
-			$("#panico").click(function(){
-				alert("panico")
+			$("#panico").on('click', function(){
+				$("body").css('background-image', 'none').css('background-color', 'black')
+				$("#video").css('display', 'block')
+				$("#video").attr('autoplay', '').attr('src', 'panico.mp4')
+				$("#video-container").css('display', 'block')
+				$("#corpo").css('display', 'none')
 			})
-			$("#esquizofrenia").click(function(){
-				alert("esquizofrenia")
+			$("#esquizofrenia").on('click', function(){
+				$("body").css('background-image', 'none').css('background-color', 'black')
+				$("#video").css('display', 'block')
+				$("#video").attr('autoplay', '').attr('src', 'esquizofrenia.mp4')
+				$("#video-container").css('display', 'block')
+				$("#corpo").css('display', 'none')
 			})
-			$("#bipolaridade").click(function(){
-				alert("bipolaridade")
+			$("#bipolaridade").on('click', function(){
+				$("body").css('background-image', 'none').css('background-color', 'black')
+				$("#video").css('display', 'block')
+				$("#video").attr('autoplay', '').attr('src', 'bipolaridade.mp4')
+				$("#video-container").css('display', 'block')
+				$("#corpo").css('display', 'none')
 			})
+		}
 
-
-		})
 	</script>
 </body>
+
 </html>
