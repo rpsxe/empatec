@@ -1,156 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
-<head>
+<html>
+<head lang="pt_BR">
 	<meta charset="UTF-8">
 	<title>Empatec</title>
+	<meta http-equiv="Content-Language" content="pt-br">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/empatec.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta property="og:type" content="website">
+	<meta name="description" content="A proposta da tecnologia assistiva em unidades de informação é proporcionar técnicas
+	adaptativas que irão beneficiar as pessoas com deficiência (PcD) na realização de atividades
+	básicas e complexas nos mais diversos âmbitos da sociedade.  ">
+	<meta name="keywords" content="Empatec, empatec, urcamp, sistemas de informação, bagé, rs, tecnologia assistiva">
+	<meta property="og:title" content="Empatec">
+	<meta property="og:description" content="A proposta da tecnologia assistiva em unidades de informação é proporcionar técnicas
+	adaptativas que irão beneficiar as pessoas com deficiência (PcD) na realização de atividades
+	básicas e complexas nos mais diversos âmbitos da sociedade.">
+	<meta property="og:url" content="http://gorilladev.com.br/empatec/img/icone.png">
+	<meta property="og:image" content="http://gorilladev.com.br/empatec/img/icone.png">
+	<meta property="og:image:width" content="200">
+	<meta property="og:image:height" content="200">
+	<link rel="shortcut icon" href="img/icone.png">
+	<link rel="manifest" href="manifest.json">
 
-	<style>
-	.aviso{
-		display: none;
-	}
-	.bulimia{
-		width: 220px;
-		height: 210px;
-		padding: 10px;
-		margin-top: 20px;
-		margin-left: 30px;
-	}
-	.panico{
-		width: 220px;
-		height: 250px;
-		padding: 10px;
-		margin-left: -45px;
-	}
-	.bipolaridade{
-		width: 220px;
-		height: 240px;
-		padding: 10px;
-		margin-top: 5px;
-		margin-left: -45px;
-	}
-	.toc{
-		width: 260px;
-		height: 250px;
-		padding: 10px;
-		margin-top: -60px;
-		margin-left: 10px;
-	}
-	.autismo{
-		width: 220px;
-		height: 250px;
-		padding: 10px;
-		margin-top: -60px;
-		margin-left: -65px;
-	}
-	.esquizofrenia{
-		width: 220px;
-		height: 250px;
-		padding: 10px;
-		margin-top: -60px;
-		margin-left: -45px;
-	}
-	.zoom{
-		cursor: pointer;
-	}
-	.zoom img{
-		-moz-transition: all 0.3s;
-		-webkit-transition: all 0.3s;
-		transition: all 0.3s;
-	}
-	.zoom:hover img{
-		-moz-transform: scale(1.1);
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-	#logo{
-		margin-left: -80px;
-	}
-	@media only screen and (max-width: 500px) {
-		.aviso{
-			display: block;
-		}
-		#corpo{
-			display: none;
-		}
-
-	}
-	@media only screen and (max-width: 700px) {
-		body {
-			overflow-x: hidden;
-			width: 100%;
-		}
-		.modal p{
-			font-size: 12px;
-		}
-		#corpo{
-			margin-left: 25px;
-		}
-		.pecas{
-			margin-left: 60px;
-		}
-		.bulimia{
-			width: 120px;
-			height: 110px;
-			padding: 10px;
-			margin-top: 20px;
-			margin-left: 30px;
-		}
-		.panico{
-			width: 120px;
-			height: 130px;
-			padding: 10px;
-			margin-left: -33px;
-			margin-top: 10px;
-		}
-		.bipolaridade{
-			width: 120px;
-			height: 125px;
-			padding: 10px;
-			margin-top: 13px;
-			margin-left: -33px;
-		}
-		.toc{
-			width: 140px;
-			height: 130px;
-			padding: 10px;
-			margin-top: -40px;
-			margin-left: 20px;
-		}
-		.autismo{
-			width: 120px;
-			height: 131px;
-			padding: 10px;
-			margin-top: -40px;
-			margin-left: -43px;
-		}
-		.esquizofrenia{
-			width: 120px;
-			height: 130px;
-			padding: 10px;
-			margin-top: -40px;
-			margin-left: -33px;
-		}
-		#logo{
-			margin-left: -20px;
-		}
-	}
-</style>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
 
 </head>
-<body class="text-center" >
-
+<body class="text-center">
 	<div class="aviso">
-		<img src="img/logo.png" alt="Empatec logo" class="img-fluid my-5" id="logo"><br><br>
+		<img src="img/logo.png" alt="Empatec logo" class="img-fluid my-5"><br><br>
 		<h1>
 			<i class="material-icons" style="font-size: 68px">
 				screen_rotation
 			</i>
 			<br>
-			Por favor, deixe seu smartphone na horizontal.
+			Por favor, ative a rotação e deixe seu smartphone na horizontal.
 		</h1>
 	</div>
 	<div id="corpo">
@@ -161,7 +48,7 @@
 			<div class="col-8 mx-auto">
 				<div class="row text-center">
 					<div class="zoom">
-						<img src="img/2.png" alt="bulimia" class="img-fluid bulimia " data-id="bulimia" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Bulimia">
+						<img src="img/2.png" alt="bulimia" class="bulimia " data-id="bulimia" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Bulimia">
 					</div>
 					<div class="zoom">
 						<img src="img/4.png" alt="panico" data-id="panico" class="panico" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Pânico">
@@ -202,7 +89,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="div">
+			<div>
 
 				<div class="footer-copyright text-center py-3">© 2019 Copyright:
 					<a href="https://www.urcamp.tche.br/cursos/graduacao/sistemas-de-informacao" target="_blank">Sistemas de Informação</a>
@@ -214,82 +101,11 @@
 
 
 	<div class="video" style="display: none; margin: 0" id="video-container" >
-		<video id="video" style="width: 100%; height: 100vh;">
-			Seu navegador não suporta o elemento <code>video</code>.
-		</video>
+		<video id="video" style="width: 100%; height: 100vh;" controls="false"></video>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<script>
-		$('#modalDescricao').on('show.bs.modal', function (event) {
-			var button = $(event.relatedTarget)
-			var titulo = button.data('nome') 
-			var id = button.data('id') 
-
-			var modal = $(this)
-			modal.find('.tituloModal').text(titulo)
-			modal.find('.id').text(id)
-			modal.find('.btnId').attr('id', id)
-			carregaVideo()			
-		})
-
-
-		function carregaVideo(e){
-			$('#video').on('ended', function (e) {
-				$('#video').css('display', 'none');
-				$('#video-container').css('display', 'none');
-				$('#corpo').css('display', 'block')
-				$("body").css('background-color', 'white')
-				$('#modalDescricao').modal('hide')
-			});
-
-			$("#toc").on('click', function(){
-				$("body").css('background-image', 'none').css('background-color', 'black')
-				$("#video").css('display', 'block')
-				$("#video").attr('autoplay', '').attr('src', 'toc.mp4')
-				$("#video-container").css('display', 'block')
-				$("#corpo").css('display', 'none')
-			})
-			$("#bulimia").on('click', function(){
-				$("body").css('background-image', 'none').css('background-color', 'black')
-				$("#video").css('display', 'block')
-				$("#video").attr('autoplay', '').attr('src', 'bulimia.mp4')
-				$("#video-container").css('display', 'block')
-				$("#corpo").css('display', 'none')
-			})
-			$("#autismo").on('click', function(){
-				$("body").css('background-image', 'none').css('background-color', 'black')
-				$("#video").css('display', 'block')
-				$("#video").attr('autoplay', '').attr('src', 'autismo.mp4')
-				$("#video-container").css('display', 'block')
-				$("#corpo").css('display', 'none')
-			})
-			$("#panico").on('click', function(){
-				$("body").css('background-image', 'none').css('background-color', 'black')
-				$("#video").css('display', 'block')
-				$("#video").attr('autoplay', '').attr('src', 'panico.mp4')
-				$("#video-container").css('display', 'block')
-				$("#corpo").css('display', 'none')
-			})
-			$("#esquizofrenia").on('click', function(){
-				$("body").css('background-image', 'none').css('background-color', 'black')
-				$("#video").css('display', 'block')
-				$("#video").attr('autoplay', '').attr('src', 'esquizofrenia.mp4')
-				$("#video-container").css('display', 'block')
-				$("#corpo").css('display', 'none')
-			})
-			$("#bipolaridade").on('click', function(){
-				$("body").css('background-image', 'none').css('background-color', 'black')
-				$("#video").css('display', 'block')
-				$("#video").attr('autoplay', '').attr('src', 'bipolaridade.mp4')
-				$("#video-container").css('display', 'block')
-				$("#corpo").css('display', 'none')
-			})
-		}
-
-	</script>
+	<script src="js/empatec.js"></script>
 </body>
-
 </html>
