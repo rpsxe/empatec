@@ -18,8 +18,8 @@
 	<meta property="og:description" content="A proposta da tecnologia assistiva em unidades de informação é proporcionar técnicas
 	adaptativas que irão beneficiar as pessoas com deficiência (PcD) na realização de atividades
 	básicas e complexas nos mais diversos âmbitos da sociedade.">
-	<meta property="og:url" content="http://gorilladev.com.br/empatec/img/icone.png">
-	<meta property="og:image" content="http://gorilladev.com.br/empatec/img/icone.png">
+	<meta property="og:url" content="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>/img/icone.png">
+	<meta property="og:image" content="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>/empatec/img/icone.png">
 	<meta property="og:image:width" content="200">
 	<meta property="og:image:height" content="200">
 	<link rel="shortcut icon" href="img/icone.png">
@@ -42,10 +42,10 @@
 	</div>
 	<div id="corpo">
 		<div class="container">
-			<div class="col-8 mx-auto">
-				<img src="img/logo.png" alt="Empatec logo" class="img-fluid my-3" id="logo" ondragstart="return false">
+			<div class="col-8 mx-auto text-center">
+				<img src="img/logo.png" alt="Empatec logo" class="img-fluid mt-3 mx-auto d-block" id="logo" ondragstart="return false">
 			</div>
-			<div class="col-8 mx-auto">
+			<div class="col-8 mx-auto corpoPecas">
 				<div class="row text-center">
 					<div class="zoom">
 						<img src="img/2.png" alt="bulimia" class="bulimia " data-id="bulimia" ondragstart="return false" data-toggle="modal" data-target="#modalDescricao" data-nome="Bulimia">
@@ -81,7 +81,7 @@
 								A simulação que você está prestes a experimentar é um breve episódio psicótico de um paciente com <span class="id"></span>.<br>
 								Uma crise assim pode causar irritabilidade, desconforto, sensação de mal estar. Os sintomas que você experimentará representam uma compilação de uma série de ocorrências sensoriais.<br>
 								Essas ocorrências incluem imagens, sons e sensações. <br>
-								Se você tiver algum desconforto durante a experiência, por favor, sinalize ao seu médico psiquiatra ou psicologo.
+								Se você tiver algum desconforto durante a experiência, por favor, sinalize ao seu médico psiquiatra ou psicólogo.
 							</p>
 							<button type="button" class="btn btn-danger" data-dismiss="modal" >Sair</button>
 							<button type="button" class="btn btn-primary btnId">Ver</button>
@@ -91,14 +91,16 @@
 			</div>
 			<div>
 
-				<div class="footer-copyright text-center py-3">© 2019 Copyright:
-					<a href="https://www.urcamp.tche.br/cursos/graduacao/sistemas-de-informacao" target="_blank">Sistemas de Informação</a>
-				</div>
 
 			</div>
 		</div>
+		<div class="footer-copyright text-center py-3">
+			<a href="sobre.php">Sobre</a> © 
+			<a href="https://www.urcamp.tche.br/cursos/graduacao/sistemas-de-informacao" target="_blank">Sistemas de Informação</a>
+		</div>
 	</div>
 
+	
 
 	<div class="video" style="display: none; margin: 0" id="video-container" >
 		<video id="video" style="width: 100%; height: 100vh;" controls="false"></video>
