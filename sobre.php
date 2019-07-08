@@ -51,7 +51,7 @@
 		font-family: 'Raleway', sans-serif;
 	}
 
-	.team h4 {
+	.team h4, .team h6 {
 		margin-top: 20px;
 		color: #5db4c0;
 	}
@@ -71,9 +71,11 @@
 <body class="text-center">
 	<div class="team">
 		<div class="container">
-
 			<div class="col">
 				<img src="img/logo.png" alt="empatec logo"><br><br>
+				<p class="lead" style="text-align: justify;">
+					O <b>Projeto Rede de Pesquisa e Desenvolvimento em Tecnologia Assistiva</b>, vinculado ao <b>Curso de Sistemas de Informação</b> (URCAMP) sob Coordenação da <i>Profa. Maria Elaine Leon</i> e em parceria com a <i>Profa. Fabiane Caillava</i> (<b>Curso de Psicologia</b>) a partir de suas vivências e práticas em sala de aula e em projetos, visando fomentar formas diversificadas de inclusão de pessoas e promover a empatia, idealizaram o app Empatec.
+				</p>
 				<h2 class="my-5">Nosso time</h2>
 				
 			</div>
@@ -81,56 +83,123 @@
 			<div class="row text-center">
 
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-					<img class="img-rounded" alt="team-photo" src="img/equipe/richard.jpg" width="100%"> 
-
+					<img class="img-rounded" alt="team-photo" src="img/equipe/maria.jpg" width="100%"> 
 					<div class="team-member">
-
-						<h4>Richard Pereira</h4>
-
-
-					</div>
-
-					<p class="social">
-						<a href="https://api.whatsapp.com/send?phone=555384070626&text=Olá%20Richard!"><span class="fa fa-whatsapp"></span></a>
-						<a href="https://github.com/rpsxe"><span class="fa fa-github"></span></a>
-					</p>
-
-				</div> 
-
-
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-					<img class="img-rounded" alt="team-photo" src="img/equipe/jovana.jpg" width="100%"> 
-
-					<div class="team-member">
-
-						<h4>Jovana Peres</h4>
+						<h4>Profa. Maria Elaine</h4>
+						<h6></h6>
 						<p class="social">
-
-							<a href="https://www.instagram.com/jovanonce/"><span class="fa fa-instagram"></span></a>
-						<a href="https://api.whatsapp.com/send?phone=555391044029&text=Olá%20Jovana!"><span class="fa fa-whatsapp"></span></a>
+							<a href="https://www.facebook.com/mariaelaine.leon"><span class="fa fa-facebook"></span></a>
+							<a href="mailto:marialeon@urcamp.edu.br"><span class="fa fa-envelope-o"></span></a>
+							<a href="http://lattes.cnpq.br/0307935355445308"><span class="fa fa-address-card-o"></span></a>
 						</p>
 					</div>
-
-				</div> 
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<img class="img-rounded" alt="team-photo" src="img/equipe/fabiane.png" width="100%"> 
+					<div class="team-member">
+						<h4>Profa. Fabiane Caillava</h4>
+						<h6></h6>
+						<p class="social">
+							<a href="https://www.facebook.com/fabiane.caillava"><span class="fa fa-facebook"></span></a>
+							<a href="mailto:fabianecaillava@urcamp.edu.br"><span class="fa fa-envelope-o"></span></a>
+							<a href="http://lattes.cnpq.br/5015267831928386"><span class="fa fa-address-card-o"></span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
 
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-					<img class="img-rounded" alt="team-photo" src="img/equipe/maria.jpg" width="100%"> 
-
+					<img class="img-rounded" alt="team-photo" src="img/equipe/richard.jpg" width="100%"> 
 					<div class="team-member">
+						<h4>Richard Pereira</h4>
+						<h6>Desenvolvimento e testes</h6>
+					</div>
+					<p class="social">
+						<a href="http://lattes.cnpq.br/7793281553819154"><span class="fa fa-address-card-o"></span></a>
+						<a href="mailto:richard_sxe@outlook.com"><span class="fa fa-envelope-o"></span></a>
+					</p>
+				</div> 
 
-						<h4>Maria Elaine</h4>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<img class="img-rounded" alt="team-photo" src="img/equipe/jovana.jpg" width="100%"> 
+					<div class="team-member">
+						<h4>Jovana Peres</h4>						
+						<h6>Desenvolvimento e testes</h6>
+						<p class="social">
+							<a href="https://www.instagram.com/jovanonce/"><span class="fa fa-instagram"></span></a>
+							<a href="https://www.facebook.com/jovana.cfontes.p"><span class="fa fa-facebook"></span></a>
+							<a href="mailto:jovanaperes@outlook.com"><span class="fa fa-envelope-o"></span></a>
+							<a href="http://lattes.cnpq.br/7771820763010104"><span class="fa fa-address-card-o"></span></a>
+						</p>
+					</div>
+				</div> 
+			</div> 
 
 
+			<div class="row text-center my-3">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<img class="img-rounded" alt="team-photo" src="img/equipe/altair.png" width="100%"> 
+					<div class="team-member">
+						<h4>Altair Barbosa</h4>
+						<h6>Projeto, logotipo e prototipação de telas</h6>
+						<p class="social">
+							<a href="https://www.facebook.com/oquesereu"><span class="fa fa-facebook"></span></a>
+							<a href="mailto:oquesereu@outlook.com "><span class="fa fa-envelope-o"></span></a>
+							<a href="http://lattes.cnpq.br/9301234430373512"><span class="fa fa-address-card-o"></span></a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<img class="img-rounded" alt="team-photo" src="img/equipe/betania.png" width="100%"> 
+					<div class="team-member">
+						<h4>Betânia Brião</h4>
+						<h6>Projeto, logotipo e prototipação de telas</h6>
+						<p class="social">
+							<a href="https://www.facebook.com/betania.briao.9"><span class="fa fa-facebook"></span></a>
+							<a href="mailto:borbabriao@outlook.pt"><span class="fa fa-envelope-o"></span></a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<img class="img-rounded" alt="team-photo" src="img/equipe/thiely.png" width="100%"> 
+					<div class="team-member">
+						<h4>Thiely Mayer</h4>
+						<h6>Projeto, logotipo e prototipação de telas</h6>
+						<p class="social">
+							<a href="https://www.facebook.com/thiely.mayer"><span class="fa fa-facebook"></span></a>
+							<a href="mailto:thiely.bg@gmail.com "><span class="fa fa-envelope-o"></span></a>
+							<a href="http://lattes.cnpq.br/7339052137346207"><span class="fa fa-address-card-o"></span></a>
+						</p>
 					</div>
 				</div>
 
-
-
-			</div> <!--col-lg-4 -->
-
+			</div>
+			<br><br>
+			<div class="row text-center my-5">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="team-member">
+						<a href="https://urcamp.edu.br/cursos/graduacao/sistemas-de-informacao">
+							<img class="img-rounded" alt="team-photo" src="img/equipe/si.png" width="100%"> 
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="team-member">
+						<a href="https://urcamp.edu.br/cursos/graduacao/psicologia">
+							<img class="img-rounded" alt="team-photo" src="img/equipe/psico.png" width="100%"> 
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="team-member">
+						<a href="https://www.facebook.com/redetecnoligiassistiva/">
+							<img class="img-rounded" alt="team-photo" src="img/equipe/tec.png" width="100%"> 
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>  <!-- row text-center -->
 
 	</div>    
